@@ -6,15 +6,15 @@ from telegram.ext import ContextTypes
 # modules/
 from mainn.chat_proactive import aplication
 # from mainn.nemotecnic import algebra
-from mainn.nemotecnic.algebra import Notas_nemotecnics
+# from nemotecnic.algebra import Notas_nemotecnics
 from mainn.keys import chat_id
 import random
 
-nota =Notas_nemotecnics()
+# nota =Notas_nemotecnics()
 
 async def Nemo_Matematicas( context:ContextTypes.DEFAULT_TYPE):
-    random_nota = random.choice(list(nota))
-    await context.bot.send_message(chat_id =chat_id, text=random_nota) 
+    # random_nota = random.choice(list(nota))
+    await context.bot.send_message(chat_id =chat_id, text="hi") 
 
 # async def Nemo_Matematicas(context: ContextTypes.DEFAULT_TYPE):
 #     random_tupla = random.choice(nota)

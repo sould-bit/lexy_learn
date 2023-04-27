@@ -4,10 +4,10 @@ from AyDictionary import AyDictionary
 from translate import Translator
 from nltk.corpus import cmudict
 
-df = pd.read_csv('20k.txt', header= None,   names=['word'])
 
 
 def get_random():
+    df = pd.read_csv('20k.txt', header= None,   names=['word'])
     # seleccionamos aleatoriamente una palabra del data frame
     word = df.sample()['word'].values[0]
     #obtener la definicion de la palabra 

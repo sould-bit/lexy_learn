@@ -2,17 +2,18 @@ from mainn.keys import token,chat_id
 
 from telegram.ext import ApplicationBuilder
 import logging
-from mainn.message_mate import run
-
-logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO
-    )
+from message.message_mate import run
+from message.message_english import mensaje
 
 
 def main():
+    logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+    )
     app = ApplicationBuilder().token(token).build()
-    run()
+    app.add_handler(mensaje)
+
     app.run_polling()
 
 
