@@ -4,31 +4,65 @@ from AyDictionary import AyDictionary
 from translate import Translator
 from nltk.corpus import cmudict
 
+space = "\n**************" *1
+# los separadores que no queremos que se muestren en el output del cliente 
+separadores = {":": ",", "{":"","}":"","[":"","]":""}
 
-
+df = pd.read_csv('20k.txt', header= None,   names=['word'])
 def get_random():
-    df = pd.read_csv('20k.txt', header= None,   names=['word'])
+    
     # seleccionamos aleatoriamente una palabra del data frame
     word = df.sample()['word'].values[0]
+    
     #obtener la definicion de la palabra 
     dictionary = AyDictionary(word)
-    print(f"Buscando definicion para , {word}")
-    dict = dictionary.getMeanings()
-    if word in dict and dict[word]:
-        print("definicion  encontrada ", dict)
+    
+    print(f"Buscando definicion para , {word} ,"+ space)
+    #obtenemos la definicion del diccionario 
+    dicti = dictionary.getMeanings()
+    
+#  condicionamos si se encuentra o no la palabra en el diccionario 
+    if word in dicti and dicti[word]:
+        # obtenemos los valores ,  del diccionario  lo pasamos por una lista y por un string 
+        definition_str =  str(list(dicti.values())) 
+        # remplazamos los separadores , para limpiar los datos , 
+        definition_separater = definition_str.translate(str.maketrans(separadores))
+        # separamos  por coma  convirtiendoo en una lista con varios valores
+        definition_split = definition_separater.split(", ")
+        definition_split2 = []
+        # recorremos la lista 
+        for definition in definition_split:
+            
+            definition_str = f"-- {definition}\n"
+            #agregamos a una nueva lista , para que retornen todos los valores de la lista y no solo el ultimo
+            definition_split2.append(definition_str)
+            # unimos la lista  a un string
+            all_definitions = "".join(definition_split2)
+        print(f"{type(definition_split)}")
+        
+        
+        print("definicion  encontrada ", str(all_definitions) + str(space))
         # print(type(dict))
-    elif word  in  dict and dict[word] == None:
+    # si no se encuentra la palabra , si el valor del dict es none 
+    elif word  in  dicti and dicti[word] == None:
+        # eliminamos , la palabra 
         df.drop(df[df['word']== word].index, inplace= True)
-        print(f"se eliminara {word}")
+        print(f"se eliminara {word}"+ space)
+        # actualizamos el archivo , sin la palabra
         df.to_csv("20k.txt", index=False, )
+        # iteramos , para buscar una palabra nueva 
+        return get_random()
         # return get_random()
+        
     
     #traduccion con traslate
-    print("traducciendo ", word )
+    print("traducciendo ", word + space)
     
     traductor_traslate = Translator(to_lang="es")
     
     traslation = traductor_traslate.translate(word)
+    traslation_definitions = traductor_traslate.translate(all_definitions)
+    
     
     print("traduccion encontrada es", traslation)
         
@@ -36,18 +70,26 @@ def get_random():
     fonetic = cmudict.dict()
     if word in fonetic:
             phonetic = fonetic[word]
-            print("se encontro la  fonetica")
+            print("se encontro la  fonetica"+ space)
+            phonetic = f"phonetic {' '.join(phonetic[0])}"
     else:
-        print(f'la fonetica de {word} no se encontro')
+        print(f'la fonetica de {word} no se encontro'+ space)
         phonetic = "Unknow"
-    
-
-    
+        
+    c = True
     # devuelve la palabra , traduccion y fonetica 
-    return {'word': word , 'form': dict,"traslation":traslation, 'phonetic': phonetic}
+    
+    palabra =f"word: {word}"
+    #  = f"{dict(dict1.values())}"
+    try:
+        return f"{palabra}\n\n  {all_definitions}\n\n{traslation_definitions}\nTraslation:\n{traslation}\n  \n{phonetic}"
+    except UnboundLocalError as error:
+        print("error  de varialble local manejado ",error)
+        
+        #      definicion  = f"- {defincion}"
+    
+    
 
 
-if __name__ == "__main__":
-     random_word = get_random()
-    #  print("word", random_word['word'],"translation", random_word['traslation'],"fonetica", random_word['phonetic'])
-     print(random_word)
+get_random()
+# print(get_random)
