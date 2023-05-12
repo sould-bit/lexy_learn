@@ -1,5 +1,4 @@
 #%%
-from message.manejador_mensajes import responses_motivation,randon_list
 from nemotecnic.world_english import get_random, word
 
 def open_readlines(archivo, split = None):
@@ -24,10 +23,9 @@ def open_read(archivo, split = None):
     
     
 def top_10():
-    with open(
-        "top_10.txt", "r") as reading:
-        readinge = reading.read()
-        data_split = readinge.split("*\n")
+    
+        data_split  = open_read("top_10.txt",True)
+        
         count_splits = len(data_split ) -  1
         print(
             f" ejecutando top_10 \n van {count_splits}")
@@ -58,19 +56,6 @@ def ciclo_top_10(lista):
 
 # agregamos , los datos  si no estan repetidos
 def add_word(add_word):
-    # with open(
-    #     "top_10.txt", 'r') as archivo :
-    #     content = archivo.readlines()
-        # count_lines = len(content)
-        # si la palabra y definicion , no  esta en el archivo  se agrega 
-        # if count_lines > 236:
-        #     with open("top_10.txt", "r")as read:
-        #         content = read.read()
-        #         words = content.split("*\n")
-        #         words.pop(-1)
-            
-            
-        #     return ciclo_top_10(words)
         
         content = open_readlines("top_10.txt")
         

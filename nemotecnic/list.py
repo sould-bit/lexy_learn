@@ -5,16 +5,13 @@ import random
 
 palabras_llamadas = []
 
-def add_word():
-    with open("top_10.txt", 'r') as archivo :
-        conten = archivo.readlines()
-        count  = len(conten) 
-        print(count)
+def add_word(name):
+    welcome = f"hi {name}, lets start again  "
         
-        return 
+    return  welcome
             
         
-        
+add_word("jhon")
        
                 
         
@@ -31,7 +28,7 @@ def add_word():
         
     
 # a =get_random()
-add_word( )
+# add_word( )
 
 
     

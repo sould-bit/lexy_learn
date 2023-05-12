@@ -4,6 +4,7 @@ from telegram.ext import ApplicationBuilder
 from mainn.chat_proactive import app
 import logging
 from message.message_english import mensaje
+from message.message_english import remove
 def chat():
     from message.message_mate import run
     app.run_polling()
@@ -17,6 +18,7 @@ def main():
     )
     app = ApplicationBuilder().token(token).build()
     app.add_handler(mensaje)
+    app.add_handler(remove)
 
     app.run_polling()
 
