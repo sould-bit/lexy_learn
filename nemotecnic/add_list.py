@@ -1,6 +1,7 @@
 #%%
 from nemotecnic.world_english import get_random, word
-
+from telegram import Update
+update = Update
 def open_readlines(archivo, split = None):
     with open(archivo, "r") as  read:
         content = read.readlines()
@@ -61,6 +62,7 @@ def add_word(add_word):
         
         
         if add_word not in  content :
+            # user_archivo = update.effective_chat
             content.append(add_word+"*\n")
             print(
                 f"añadiendo {word} a los top_10 " )

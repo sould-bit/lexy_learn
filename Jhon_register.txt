@@ -1,0 +1,113 @@
+word: bytes
+
+  -- 'Noun'
+-- 'a sequence of 8 bits (enough to represent one character of alphanumeric data'
+
+
+-- 'Sustantivo'
+-- 'una secuencia de 8 bits (suficiente para representar un carácter de datos alfanuméricos'
+Traslation:
+bytes
+  
+phonetic B AY1 T S
+
+*
+word: request
+
+  -- 'Noun'
+-- 'a formal message requesting something that is submitted to an authority'
+-- 'the verbal act of requesting'
+-- 'Verb'
+-- 'express the need or desire for'
+-- 'ask (a person'
+-- 'inquire for (information'
+
+
+-- 'Sustantivo'
+-- 'un mensaje formal que solicita algo que se envía a una autoridad'
+-- "el acto verbal de solicitar"
+- 'Verbo'
+- 'expresar la necesidad o el deseo de'
+-- 'preguntar (una persona'
+-- 'preguntar por (información'
+Traslation:
+solicitud
+  
+phonetic R IH0 K W EH1 S T
+
+*
+word: farming
+
+  -- 'Noun'
+-- 'the practice of cultivating the land or raising stock'
+-- 'agriculture considered as an occupation or way of life'
+-- 'Verb'
+-- 'be a farmer; work as a farmer'
+-- 'collect fees or profits'
+-- 'cultivate by growing
+-- often involving improvements by means of agricultural techniques'
+-- 'Adjective'
+-- 'relating to farming or agriculture'
+-- 'or agricultural'
+
+
+la traduccion se funio
+Traslation:
+la traduccion se funio
+  
+phonetic F AA1 R M IH0 NG
+
+*
+word: estimate
+
+  -- 'Noun'
+-- 'an approximate calculation of quantity or degree or worth'
+-- 'a judgment of the qualities of something or somebody'
+-- 'a document appraising the value of something (as for insurance or taxation'
+-- 'a statement indicating the likely cost of some job'
+-- 'the respect with which a person is held'
+-- 'Verb'
+-- 'judge tentatively or form an estimate of (quantities or time'
+-- 'judge to be probable'
+
+
+la traduccion se funio
+Traslation:
+la traduccion se funio
+  
+phonetic EH1 S T AH0 M AH0 T
+
+*
+word: barrels
+
+  -- 'Noun'
+-- 'a tube through which a bullet travels when a gun is fired'
+-- 'a cylindrical container that holds liquids'
+-- 'a bulging cylindrical shape; hollow with flat ends'
+-- 'the quantity that a barrel (of any size'
+-- 'any of various units of capacity'
+-- 'the amount that many barrels might hold'
+-- 'Verb'
+-- 'put in barrels'
+
+
+la traduccion se funio
+Traslation:
+la traduccion se funio
+  
+phonetic B AE1 R AH0 L Z
+
+*
+word: lilies
+
+  -- 'Noun'
+-- 'any liliaceous plant of the genus Lilium having showy pendulous flowers'
+
+
+la traduccion se funio
+Traslation:
+la traduccion se funio
+  
+phonetic L IH1 L IY0 Z
+
+*
