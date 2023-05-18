@@ -111,3 +111,35 @@ la traduccion se funio
 phonetic L IH1 L IY0 Z
 
 *
+word: diet
+
+  -- 'Noun'
+-- 'a prescribed selection of foods'
+-- 'a legislative assembly in certain countries (e.g.
+-- Japan'
+-- 'the usual food and drink consumed by an organism (person or animal'
+-- 'the act of restricting your food intake (or your intake of particular foods'
+-- 'Verb'
+-- 'follow a regimen or a diet
+-- as for health reasons'
+-- 'eat sparingly
+-- for health reasons or to lose weight'
+
+
+-- 'Sustantivo'
+-- 'una selección prescrita de alimentos'
+-- 'una asamblea legislativa en ciertos países (p. ej.
+Japón:
+el alimento y bebida habitual consumido por un organismo (persona o animal).
+El acto de restringir su ingesta de alimentos (o su ingesta de alimentos particulares).
+-- 'Verbo'
+-- 'seguir un régimen o una dieta
+-- como por razones de salud "
+- 'comer con moderación
+- por razones de salud o para perder peso'
+Traslation:
+dieta
+  
+phonetic D AY1 AH0 T
+
+*

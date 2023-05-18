@@ -13,7 +13,7 @@ def open_read(archivo, split = None):
         archivo,"r")as read:
         content = read.read()
         if split == True:
-            data = content.split("*\n")
+            data = content.split("*")
             read.close()
         else:
             data = content

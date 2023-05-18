@@ -11,7 +11,7 @@ import os
 def tops():
         data_split  = open_read(name_arch,True)
         
-        count_splits = len(data_split ) -  1
+        count_splits = len(data_split )-1
         print(
             f" ejecutando top_10 \n van {count_splits}")
         
@@ -44,9 +44,13 @@ def main (user_top):
         # antes de agregar los datos , nesesitamos validar si ya tiene mas de 7 words 
         count_words =len(data)
         print("leido")
-        if count_words > 174:
-            read = open_read(name_arch,split=True)
-            ciclo_top_10(read)
+        
+        if count_words > 143:
+            read = open_read(name_arch,True)
+            if len(read) == 8:
+                file = read[:-1]
+                
+                return ciclo_top_10(file)
             
             # iteramos sobre la lista de palabras 
             
@@ -57,10 +61,10 @@ def main (user_top):
                 
                 data.append(word+"*\n")
             
-                user_register = user_top + "_register.txt"
+                # user_register = user_top + "_register.txt"
                 
-                data_register = open_readlines(user_register)
-                content_register = data_register.append(word+"*\n")
+                # data_register = open_readlines(user_register)
+                # content_register = data_register.append(word+"*\n")
                 #añadimos la data  a los tops
                 print(f"añadiendo la data al top de {user_top}")
                 open_write(user_top, data, True)
