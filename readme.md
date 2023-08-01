@@ -28,3 +28,21 @@ se recomienda estudiar tres o cuadro palabras por dia ..
 - aydictionary  
 - numpy 
 
+
+
+# INSTALACION 
+
+pip install requirements.txt
+
+es nesesario que instales , nltk  en el shell de python 
+
+python3 
+import nltk
+nltk.download() #para descargar los modelos necesarios
+
+en la lista seleciona descargar 
+
+para este proyecto nesesitaremos 
+- cmudict
+
+
