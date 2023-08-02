@@ -12,7 +12,7 @@ import asyncio
 
 async def message_word_english(update: Update, context:ContextTypes.DEFAULT_TYPE):
     name = update.effective_chat.first_name
-    a = get_random()
+    
     palabra = main(name)
     # mensaje = add_word(palabra)
     print("enviando mensaje")

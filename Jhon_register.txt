@@ -1,14 +1,26 @@
-word: millionaire
+word: mating
 
   -- 'Noun'
--- 'a person whose material wealth is valued at more than a million dollars'
+-- 'the act of pairing a male and female for reproductive purposes'
+-- 'Verb'
+-- 'engage in sexual intercourse'
+-- 'bring two objects
+-- ideas
+-- or people together'
+-- "place an opponent's king under an attack from which it cannot escape and thus ending the game"
 
 
-- 'Sustantivo'
-- 'una persona cuya riqueza material está valorada en más de un millón de dólares'
+-- 'Sustantivo'
+-- 'el acto de emparejar un macho y una hembra con fines reproductivos'
+-- 'Verbo'
+-- 'tener relaciones sexuales'
+-- 'trae dos objetos
+-- ideas
+-- o personas juntas'
+-- "colocar al rey de un oponente bajo un ataque del que no puede escapar y así terminar el juego"
 Traslation:
-millonario
+apareamiento
   
-phonetic M IH2 L Y AH0 N EH1 R
+phonetic M EY1 T IH0 NG
 
 *

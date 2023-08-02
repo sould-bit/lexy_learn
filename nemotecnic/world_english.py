@@ -118,5 +118,5 @@ def get_random():
     
 
 
-get_random()
+# get_random()
 # print(get_random)
