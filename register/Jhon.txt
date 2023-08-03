@@ -1,0 +1,24 @@
+word: president
+
+  -- 'Noun'
+-- 'an executive officer of a firm or corporation'
+-- 'the person who holds the office of head of state of the United States government'
+-- 'the chief executive of a republic'
+-- 'the officer who presides at the meetings of an organization'
+-- 'the head administrative officer of a college or university'
+-- 'the office of the United States head of state'
+
+
+-- 'Sustantivo'
+-- 'un funcionario ejecutivo de una empresa o corporación'
+-- 'la persona que ocupa el cargo de jefe de estado del gobierno de los Estados Unidos'
+-- "el jefe ejecutivo de una república"
+-- 'el funcionario que preside las reuniones de una organización'
+-- 'el director administrativo de un colegio o universidad'
+-- 'la oficina del jefe de estado de los Estados Unidos'
+Traslation:
+presidente
+  
+phonetic P R EH1 Z AH0 D EH2 N T
+
+*

@@ -39,7 +39,7 @@ def main (user_top):
     # name_arch = os.path.splitext(user_top)[0]
     global name_arch
     name_arch  = user_top + ".txt"
-    if os.path.isfile(name_arch):
+    if os.path.isfile(f"register/{name_arch}"):
         data = open_readlines(name_arch)
         # antes de agregar los datos , nesesitamos validar si ya tiene mas de 7 words 
         count_words =len(data)
@@ -66,10 +66,10 @@ def main (user_top):
                 # data_register = open_readlines(user_register)
                 # content_register = data_register.append(word+"*\n")
                 #añadimos la data  a los tops
-                print(f"añadiendo la data al top de {user_top}")
-                open_write(user_top, data, True)
+                print(f"\nañadiendo la data al top de {user_top}\n")
+                open_write(user_top, data, readline=True)
                 # añadimos la data a los register 
-                print(f"añadiendo la data al Register de {user_top}")
+                print(f"\nañadiendo la data al Register de {user_top}\n")
                 # open_write(user_register, content_register, readline= True)
                 return tops()
                 
@@ -87,7 +87,7 @@ def main (user_top):
         print("creando")
         open_write(user_top )
         
-        response = f"welcome {user_top} \n\n\n,come on press again ;)"
+        response = f"welcome {user_top} \nte cree una carpeta para tus registros \n\n,come on press again ;)"
         return response
         
 

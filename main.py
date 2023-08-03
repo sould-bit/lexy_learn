@@ -1,14 +1,10 @@
 from mainn.keys import token,chat_id
 
 from telegram.ext import ApplicationBuilder
-from mainn.chat_proactive import app
 import logging
 from message.message_english import mensaje
 from message.message_english import remove
-def chat():
-    from message.message_mate import run
-    app.run_polling()
-    run()
+
     
 
 def main():
@@ -25,6 +21,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    chat()
     
     

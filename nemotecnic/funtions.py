@@ -2,15 +2,15 @@ import pandas as pd
 import os 
 
 def open_readlines(archivo:str):
-    with open(archivo, "r") as  read:
+    with open(f"register/{archivo}", "r") as  read:
         data  = read.readlines()
         read.close()
         return data
     
 def open_read(archivo, split = None):
-    print("open read")
+    print("ejecutando  open read\n")
     with open(
-        archivo,"r")as read:
+        f"register/{archivo}","r")as read:
         content = read.read()
         if split == True:
             data = content.split("*")
@@ -22,9 +22,9 @@ def open_read(archivo, split = None):
     
 def open_write(archivo
                , date= None, readline=None):
-     print("open write")
+     print("ejecutando \n open write")
      with open(
-                f"{archivo}.txt", 'w') as writing:
+                f"register/{archivo}.txt", 'w') as writing:
                 if date == None:
                     writing.write("")
                     writing.close()
@@ -39,7 +39,7 @@ def open_write(archivo
          
     #      writing.writelines(f"{date}")
     #  else:
-     with open(f"{archivo}_register.txt", 'w')as register:
+     with open(f"register/{archivo}_register.txt", 'w')as register:
                 if date == None:
                     register.write("")
                     register.close()
@@ -52,7 +52,7 @@ def open_write(archivo
          
 
 def open_add(archivo, dato):
-    with open(archivo,"a")as read:
+    with open(f"register/{archivo}","a")as read:
         read.write(dato)
         read.close()
         
