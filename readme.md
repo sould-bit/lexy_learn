@@ -32,6 +32,10 @@ se recomienda estudiar tres o cuadro palabras por dia ..
 
 # INSTALACION 
 
+sudo apt-get update
+sudo apt-get install libxml2-dev libxslt1-dev
+
+
 pip install requirements.txt
 
 es nesesario que instales , nltk  en el shell de python 

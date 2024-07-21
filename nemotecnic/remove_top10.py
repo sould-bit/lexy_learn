@@ -3,7 +3,7 @@ from message.manejador_mensajes import responses_motivation,randon_list
 
 
 def remove_top(name):
-    list = f"{name}.txt"
+    list = f"register/{name}.txt"
     
     def remove(list):
         with open(list, "w") as file:

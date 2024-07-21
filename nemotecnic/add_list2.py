@@ -43,11 +43,11 @@ def main (user_top):
         data = open_readlines(name_arch)
         # antes de agregar los datos , nesesitamos validar si ya tiene mas de 7 words 
         count_words =len(data)
-        print("leido")
+        print("el usuario se encontro en /register")
         
         if count_words > 143:
             read = open_read(name_arch,True)
-            if len(read) == 8:
+            if len(read) == 7:
                 file = read[:-1]
                 
                 return ciclo_top_10(file)

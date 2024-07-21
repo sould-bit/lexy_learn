@@ -23,8 +23,18 @@ def get_random():
     print(f"Buscando definicion para , {word} ,"+ space)
     #obtenemos la definicion del diccionario 
     try:    
-        response = requests.get(f'http://wordnetweb.princeton.edu/perl/webwn?s={word}')
-        dicti = dictionary.getMeanings()
+#        response = requests.get(f'http://wordnetweb.princeton.edu/perl/webwn?s={word}')
+        try:
+            dicti = dictionary.getMeanings()  
+        except Exception as e:
+            print(f"Error fetching word meanings: {e}")
+            print(f"Word: {word}")
+            print(f"Dictionary: {dictionary}")
+            
+        else:
+            print("Word is empty or None")
+        
+
 
 #  c    ondicionamos si se encuentra o no la palabra en el diccionario 
         if word in dicti and dicti[word]:
@@ -118,5 +128,5 @@ def get_random():
     
 
 
-# get_random()
+#get_random()
 # print(get_random)
