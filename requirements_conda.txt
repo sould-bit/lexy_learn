@@ -1,0 +1,30 @@
+# packages in environment at /home/jhon/miniconda3/envs/sql_conector:
+#
+# Name                    Version                   Build  Channel
+brotli-python             1.0.9           py312h6a678d5_8  
+c-ares                    1.32.2               h4bc722e_0    conda-forge
+ca-certificates           2024.7.4             hbcca054_0    conda-forge
+charset-normalizer        2.0.4              pyhd3eb1b0_0  
+conda-libmamba-solver     24.7.0             pyhd8ed1ab_0    conda-forge
+conda-package-handling    2.3.0           py312h06a4308_0  
+conda-package-streaming   0.10.0          py312h06a4308_0  
+importlib-metadata        8.0.0              pyha770c72_0    conda-forge
+ld_impl_linux-64          2.38                 h1181459_1  
+libgcc-ng                 14.1.0               h77fa898_0    conda-forge
+libstdcxx-ng              14.1.0               hc0a3c3a_0    conda-forge
+llvm-openmp               18.1.8               hf5423f3_0    conda-forge
+lz4-c                     1.9.4                h6a678d5_1  
+matplotlib-inline         0.1.7              pyhd8ed1ab_0    conda-forge
+mkl-service               2.4.0           py312h5eee18b_1  
+mysql-common              8.3.0                h70512c7_5    conda-forge
+mysql-connector-python    8.3.0           py312hb06c811_0    conda-forge
+mysql-libs                8.3.0                ha479ceb_5    conda-forge
+nest-asyncio              1.6.0              pyhd8ed1ab_0    conda-forge
+numpy-base                1.26.4          py312h0da6c21_0  
+prompt-toolkit            3.0.47             pyha770c72_0    conda-forge
+pybind11-abi              4                    hd8ed1ab_3    conda-forge
+python-dateutil           2.9.0post0      py312h06a4308_2  
+python-telegram-bot       21.4                     pypi_0    pypi
+python-tzdata             2023.3             pyhd3eb1b0_0  
+reproc-cpp                14.2.4               h6a678d5_2  
+yaml-cpp                  0.8.0                h6a678d5_1  
