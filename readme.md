@@ -17,6 +17,9 @@ la base de datos para este ejercicio hace parte de el proyecto de grado para el 
 el bot  te muestre una serie de 7 palabras para que convivas con ellas hasta  que las interiorices
 y , puedes seguir con otra serie de 7 palabras nuevas .. 
 
+
+podras preguntarle a un modelo AI la palabra que pregfieras y te dara toda la info nesesaria de la palabra 
+
 se recomienda estudiar tres o cuadro palabras por dia .. 
 
 
@@ -24,6 +27,7 @@ se recomienda estudiar tres o cuadro palabras por dia ..
  es construido con 
 - mysql conector 
 - python-telegram 
+- ollama 3.1
 
 
 
