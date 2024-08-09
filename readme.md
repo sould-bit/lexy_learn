@@ -7,11 +7,9 @@ este proyecto es construido , con el fin de  aprendizaje y mejorar  mis habilida
 
 
 su  objetivo  es brindarle al usuario  un dominio , del 80 %  del dialecto  americano 
-segun la metodologuia "English Vocabulary in Use"  con un total de 20k palabras mas cotidianas segun el el estudio de Google 
+segun la metodologuia "English Vocabulary in Use" 
 
-"
-This repo contains a list of the 10,000 most common English words in order of frequency, as determined by [n-gram](https://en.wikipedia.org/wiki/N-gram) [frequency analysis](https://en.wikipedia.org/wiki/Frequency_analysis) of the [Google's Trillion Word Corpus](https://books.google.com/ngrams/info).
-"
+la base de datos para este ejercicio hace parte de el proyecto de grado para el bootacamp de talento tech 
 
 
 # metodologuia 
@@ -19,14 +17,17 @@ This repo contains a list of the 10,000 most common English words in order of fr
 el bot  te muestre una serie de 7 palabras para que convivas con ellas hasta  que las interiorices
 y , puedes seguir con otra serie de 7 palabras nuevas .. 
 
+
+podras preguntarle a un modelo AI la palabra que pregfieras y te dara toda la info nesesaria de la palabra 
+
 se recomienda estudiar tres o cuadro palabras por dia .. 
 
 
 
  es construido con 
-- nltk 
-- aydictionary  
-- numpy 
+- mysql conector 
+- python-telegram 
+- ollama 3.1
 
 
 
@@ -36,17 +37,7 @@ sudo apt-get update
 sudo apt-get install libxml2-dev libxslt1-dev
 
 
-pip install requirements.txt
+pip install requirements_conda.txt
 
-es nesesario que instales , nltk  en el shell de python 
-
-python3 
-import nltk
-nltk.download() #para descargar los modelos necesarios
-
-en la lista seleciona descargar 
-
-para este proyecto nesesitaremos 
-- cmudict
 
 
