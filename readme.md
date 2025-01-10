@@ -3,7 +3,7 @@
 ## build for learn 
 
 este proyecto es construido , con el fin de  aprendizaje y mejorar  mis habilidades de programacion ,
-# se recive feedback , 
+# se recibe feedback , 
 
 
 su  objetivo  es brindarle al usuario  un dominio , del 80 %  del dialecto  americano 
